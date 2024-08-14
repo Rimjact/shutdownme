@@ -1,0 +1,23 @@
+/* Roboto Regular */
+@font-face {
+    font-family: roboto-regular;
+    src: url('../../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+/* Roboto Medium */
+@font-face {
+    font-family: roboto-medium;
+    src: url('../../assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+/* Roboto Black */
+@font-face {
+    font-family: roboto-black;
+    src: url('../../assets/fonts/Roboto/Roboto-Black.ttf');
+}
+
+/* Roboto Bold */
+@font-face {
+    font-family: roboto-bold;
+    src: url('../../assets/fonts/Roboto/Roboto-Bold.ttf');
+}

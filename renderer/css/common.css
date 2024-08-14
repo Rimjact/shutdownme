@@ -1,0 +1,65 @@
+@import url('fonts.css');
+
+/* === CSS Variables === */
+:root {
+    /* Colors */
+    --first-color: #191525;
+    --second-color: #312947;
+    --third-color: #dadada;
+    --fifth-color: #997fbc;
+    --sixth-color: #b485ca;
+
+    /* Font */
+    --font-regular: 'roboto-regular';
+    --font-medium: 'roboto-medium';
+    --font-bold: 'roboto-bold';
+    --font-black: 'roboto-black';
+}
+
+/* === COMMON SETUPS === */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-regular);
+    background: var(--first-color);
+    color: var(--third-color);
+}
+
+h1 {
+    font-family: var(--font-bold);
+}
+
+h3 {
+    font-family: var(--font-bold);
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+label {
+    font-family: var(--font-regular);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

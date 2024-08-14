@@ -1,0 +1,105 @@
+/* === IMPORTS === */
+@import url(common.css);
+
+main {
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shutdown__type__radio {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 200px;
+}
+
+.radio {
+    display: inline-block;
+    flex-basis: 50%;
+}
+
+    .radio input[type="radio"] {
+        display: none;
+    }
+
+    .radio label {
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        background: var(--second-color);
+        font-size: 14px;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        font-family: var(--font-regular);
+        transition: .2s background ease-in-out;
+    }
+
+        .radio input[type=radio]:hover + label {
+            background: var(--sixth-color);
+        }
+
+        .radio input[type=radio]:checked + label {
+            background: var(--fifth-color);
+        }
+
+        .radio:first-child label {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .radio:last-child label {
+            border-radius: 0 10px 10px 0;
+        }
+
+#button-execute {
+    background: var(--fifth-color);
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    color: var(--third-color);
+    font-size: 96px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px var(--fifth-color);
+    transition: .2s background linear;
+    transition: .2s box-shadow linear;
+}
+
+    #button-execute:hover {
+        background: var(--sixth-color);
+        box-shadow: 0 0 15px 10px var(--sixth-color);
+    }
+
+.shutdown__timer__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+    .input__number {
+        width: 87px;
+        height: 34px;
+        font-size: 14px;
+        background: var(--second-color);
+        color: var(--third-color);
+        transition: .2s color linear;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: var(--font-regular);
+    }
+
+        .input__number::placeholder {
+            color: var(--third-color);
+            transition: .2s color linear;
+        }
+
+        .input__number:focus, .input__number:focus::placeholder {
+            color: var(--sixth-color);
+        }

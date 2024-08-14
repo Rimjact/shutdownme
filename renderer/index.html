@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- This Content Security Policy fix the Electron Security Warning -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ShutdownMe</title>
+</head>
+<body>
+    <!-- MAIN -->
+    <main>
+        <div class="shutdown__type__radio">
+            <div class="radio">
+                <input id="radio-power-off" type="radio" name="shutdown-type" value="power-off" checked>
+                <label for="radio-power-off">Power-Off</label>
+            </div>
+            <div class="radio">
+                <input id="radio-reboot" type="radio" name="shutdown-type" value="reboot">
+                <label for="radio-reboot">Reboot</label>
+            </div>
+        </div>
+        <button id="button-execute">
+            <i id="button-execute-icon" class="ri-shut-down-line"></i>
+        </button>
+        <div class="shutdown__timer__inputs">
+            <input class="input__number" type="number" id="shutdown-timer-hours" placeholder="Hours"  min="0">
+            <p>:</p>
+            <input class="input__number" type="number" id="shutdown-timer-minutes" placeholder="Minutes"  min="0" max="59">
+            <p>:</p>
+            <input class="input__number" type="number" id="shutdown-timer-seconds" placeholder="Seconds" min="0" max="59">
+        </div>
+    </main>
+    <!-- CONNECT SCRIPTS -->
+    <!-- Modules -->
+    <script src="js/app-controller.js"></script>
+    <!-- Main script -->
+    <script src="js/renderer.js"></script>
+</body>
+</html>
