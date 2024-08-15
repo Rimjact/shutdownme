@@ -1,7 +1,7 @@
 {
   "name": "shutdownme",
   "productName": "ShutdownMe",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple app for Windows, MacOS, Linux for shutdown the system by time.",
   "main": "main.js",
   "author": "Rimjact",

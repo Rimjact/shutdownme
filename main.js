@@ -2,7 +2,7 @@
 ========= Shutdown Me =========
 This is simple app for Windows, MacOS and Linux for shutdown system by time.
 
-v1.0.0 (14.08.2024) | © Rimjact, 2024
+v1.0.2 (15.08.2024) | © Rimjact, 2024
 */
 
 process.env.NODE_ENV = 'production';

@@ -37,10 +37,6 @@ class AppController {
 
         if (this.shutdownStarted) {
             this.abort();
-            this.shutdownStarted = false;
-            this.timerTimeOut = null;
-            this.elements.executeButtonIcon.classList.remove('ri-close-large-line');
-            this.elements.executeButtonIcon.classList.add('ri-shut-down-line');
             return;
         }
 
@@ -89,6 +85,11 @@ class AppController {
      * Abort executed command.
      */
     abort = () => {
+        this.shutdownStarted = false;
+        clearInterval(this.timerTimeOut);
+        this.elements.executeButtonIcon.classList.remove('ri-close-large-line');
+        this.elements.executeButtonIcon.classList.add('ri-shut-down-line');
+
         sdme.abort();
         this.enableTimerInputs();
     }

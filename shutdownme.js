@@ -72,6 +72,8 @@ module.exports = {
             case 'win32':
                 if (options.closeApps)
                     cmdString += ' -f';
+
+                break;
             // For other platforms
             default:
                 throw new Error('Unsupported OS!');
